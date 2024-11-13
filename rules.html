@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Rules</title>
+  <style>
+    /* Reset some basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #006400;
+      padding: 1rem 0;
+      text-align: center;
+      color: white
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .dropdown-container {
+      margin-bottom: 1.5rem;
+    }
+
+    .dropdown-container h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    /* Style for dropdown toggle */
+    .dropdown {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background-color: #f4f4f4;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .dropdown-content {
+      display: none;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+
+    /* Style for active dropdown */
+    .dropdown.active + .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:focus {
+      outline: none;
+      border-color: #006400;
+    }
+
+    .dropdown:hover {
+      background-color: #e6e6e6;
+    }
+
+    .back-to-home {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .back-button {
+    background-color: #006400;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .back-button:hover {
+    background-color: #004d00;
+    transform: scale(1.05);
+  }
+
+  .back-button:focus {
+    outline: none;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Golf Rules</h1>
+  </div>
+
+  <!-- Go back to the home page -->
+  <div class="back-to-home">
+    <a href="index.html" class="back-button">Back to Homepage</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h2>Understand the Rules of Golf</h2>
+    <p>Get familiar with the important rules and regulations that govern the game of golf. Each section covers essential aspects of the game, including how to play, rules on the course, competition guidelines, and player responsibilities.</p>
+
+    <!-- Dropdown for The Basics -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">The Basics</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>The game of golf is played with a club and ball, and the goal is to hit the ball into a series of holes on the course with the fewest strokes possible.</li>
+          <li>A golf course typically consists of 18 holes, each with a tee box, fairway, rough, and a green.</li>
+          <li>The player who completes the course with the lowest total strokes wins the round.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for The Course -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">The Course</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>The course consists of 18 holes, each with its unique par (the number of strokes a skilled golfer should take to complete the hole).</li>
+          <li>The hole is played from the tee box to the hole location on the green, where the ball is putted into the hole.</li>
+          <li>Some courses have multiple tee options, offering different levels of difficulty.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for The Competition -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">The Competition</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>Golf competitions can be played as stroke play (total number of strokes counts) or match play (the number of holes won counts).</li>
+          <li>In stroke play, the player with the fewest strokes wins.</li>
+          <li>In match play, each hole is a mini-competition; the player who wins the most holes wins the match.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for The Player's Equipment -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">The Player's Equipment</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>A golfer may carry up to 14 clubs during a round of golf, including drivers, irons, wedges, and a putter.</li>
+          <li>The clubs must be in good condition and meet the specifications set by the governing bodies of golf.</li>
+          <li>Golf balls used must conform to the standards set by the USGA or R&A.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for Penalty Areas, Out-of-Bounds, Lost Ball, Free Relief -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">Penalty Areas, Out-of-Bounds, Lost Ball, Free Relief</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>If a ball lands in a penalty area (e.g., water hazard), the player may take a drop with a penalty stroke.</li>
+          <li>If the ball goes out of bounds, the player must take a stroke-and-distance penalty and drop a new ball from the original position.</li>
+          <li>If the ball is lost, a similar penalty applies as if it went out of bounds.</li>
+          <li>Players may take free relief from certain conditions such as immovable obstructions, ground under repair, or a cart path.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for Advice and Help, Caddies -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">Advice and Help, Caddies</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>Caddies may provide advice on the course and help carry a player's clubs.</li>
+          <li>However, a caddie cannot provide advice on what shot a player should play, and this may result in a penalty.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for Putting Green Rules -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">Putting Green Rules</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>Once a ball has been putted on the green, it may not be moved unless authorized by the rules.</li>
+          <li>Players can repair any damage on the putting green, such as ball marks, but cannot remove sand or water from the green.</li>
+          <li>Players should not stand close to the hole or line of putt of another player while they are putting.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dropdown for Team Play -->
+    <div class="dropdown-container">
+      <button class="dropdown" onclick="toggleDropdown(this)">Team Play</button>
+      <div class="dropdown-content">
+        <ul>
+          <li>In team play, two or more players compete as a team rather than individually.</li>
+          <li>Team play can be in various formats like foursomes, four-ball, or team stroke play.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Function to toggle dropdown visibility
+    function toggleDropdown(button) {
+      // Toggle the active class on the clicked dropdown
+      button.classList.toggle('active');
+      
+      // Toggle the visibility of the dropdown content
+      var content = button.nextElementSibling;
+      content.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Coaching Homepage</title>
+  <style>
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.homepage-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Welcome Section */
+.welcome {
+  position: relative;
+  background: url('welcome.avif') no-repeat center center/cover;  
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.welcome .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slight dark overlay for text visibility */
+}
+
+.welcome .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #006400;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #004d00;
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-child(even) {
+  flex-direction: row;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #006400;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section .text {
+  max-width: 600px;
+}
+
+.section-image {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #006400;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004d00;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Homepage container -->
+  <div class="homepage-container">
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <div class="overlay">
+        <div class="content">
+          <h1>Welcome to Your Golf Coaching Journey</h1>
+          <p>Transform your golf game with expert guidance, tailored feedback, and comprehensive training materials. Whether you're starting from scratch or refining your technique, we’re here to help you reach your full potential.</p>
+          <a href="swing-analysis.html" class="cta-button">Start Your Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swing Analysis Section -->
+    <section class="section swing-analysis">
+      <div class="section-content">
+        <div class="text">
+          <h2>Swing Analysis</h2>
+          <p>Unlock your swing’s potential with a detailed analysis. Our experts break down every aspect of your swing and provide customized feedback to improve your form and power.</p>
+          <a href="swing-analysis.html" class="cta-button">Analyze Your Swing</a>
+        </div>
+        <img src="swing-analysis-image.jpg" alt="Swing Analysis" class="section-image"> <!-- Replace with your image -->
+      </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="section rules">
+      <div class="section-content">
+        <div class="text">
+          <h2>The Rules of Golf</h2>
+          <p>Understand the foundation of the game with our comprehensive rules guide. Stay up to date with the latest regulations and etiquette to play like a pro.</p>
+          <a href="rules.html" class="cta-button">Learn the Rules</a>
+        </div>
+        <img src="rules-image.jpg" alt="Rules of Golf" class="section-image"> <!-- Replace with your image -->
+      </div>
+    </section>
+
+    <!-- Golfing Theory Section -->
+    <section class="section golfing-theory">
+      <div class="section-content">
+        <div class="text">
+          <h2>Golfing Theory</h2>
+          <p>Get inside the mind of the game. Our golfing theory section helps you develop a winning mindset, effective strategies, and smart course management tips.</p>
+          <a href="golfing-theory.html" class="cta-button">Master the Game</a>
+        </div>
+        <img src="golfing-theory-image.jpg" alt="Golfing Theory" class="section-image"> <!-- Replace with your image -->
+      </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="section equipment">
+      <div class="section-content">
+        <div class="text">
+          <h2>Golf Equipment</h2>
+          <p>Choosing the right equipment can boost your performance. Explore our recommendations for clubs, balls, and accessories that suit your playing style and level.</p>
+          <a href="equipment.html" class="cta-button">Find Your Gear</a>
+        </div>
+        <img src="equipment-image.jpg" alt="Golf Equipment" class="section-image"> <!-- Replace with your image -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Golf Coaching. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
+

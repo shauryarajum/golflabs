@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Equipment</title>
+  <style>
+    /* Reset some basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Header styling */
+    .header {
+      background-color: #006400;
+      padding: 1.5rem 0;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Main content section */
+    .content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    /* Section Layout */
+    .equipment-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .equipment-text {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .equipment-image {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .equipment-image img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .equipment-list {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    .equipment-list li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .equipment-list li:before {
+      content: "✔️";
+      padding-right: 0.5rem;
+      color: #006400;
+    }
+
+    /* Back to Home Button */
+    .back-to-home {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back-button {
+      background-color: #006400;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #004d00;
+      transform: scale(1.05);
+    }
+
+    .back-button:focus {
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Golf Equipment</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Section 1: Drivers -->
+    <div class="equipment-section">
+      <div class="equipment-text">
+        <h2>Drivers</h2>
+        <p>The driver is one of the most important clubs in your bag for distance. It has the largest clubhead and the longest shaft, designed to provide maximum power and distance off the tee. A good driver combines a forgiving face, a low center of gravity, and adjustable loft options to suit your swing.</p>
+        <ul class="equipment-list">
+          <li>Large clubhead for a larger sweet spot.</li>
+          <li>Low center of gravity for easier launches.</li>
+          <li>Adjustable loft and shaft for custom fit.</li>
+          <li>Graphite shaft to reduce weight and increase swing speed.</li>
+        </ul>
+      </div>
+      <div class="equipment-image">
+        <img src="your-driver-image.jpg" alt="Driver Club">
+      </div>
+    </div>
+
+    <!-- Section 2: Irons -->
+    <div class="equipment-section">
+      <div class="equipment-text">
+        <h2>Irons</h2>
+        <p>Irons are versatile clubs used for a wide variety of shots. They are numbered based on loft, with 3-iron being the lowest loft and 9-iron the highest. A good iron provides a balance of distance and accuracy, with a forgiving face that helps reduce mishits.</p>
+        <ul class="equipment-list">
+          <li>Varied lofts for a range of shot types.</li>
+          <li>Forged or cast faces for precision and feel.</li>
+          <li>Shorter shaft length for control and accuracy.</li>
+          <li>Offset designs to help with ball striking.</li>
+        </ul>
+      </div>
+      <div class="equipment-image">
+        <img src="your-iron-image.jpg" alt="Iron Club">
+      </div>
+    </div>
+
+    <!-- Section 3: Wedges -->
+    <div class="equipment-section">
+      <div class="equipment-text">
+        <h2>Wedges</h2>
+        <p>Wedges are specialized irons designed for short-game shots, such as chipping, pitching, and bunker play. They have the highest lofts, allowing for greater control and a higher ball flight. A good wedge should have precision grooves and a comfortable grip for short-game performance.</p>
+        <ul class="equipment-list">
+          <li>High lofts (48° - 64°) for control and spin.</li>
+          <li>Varied bounce options for different lies and turf conditions.</li>
+          <li>Groove technology for maximum spin around the greens.</li>
+          <li>Soft, responsive feel for short-game precision.</li>
+        </ul>
+      </div>
+      <div class="equipment-image">
+        <img src="your-wedge-image.jpg" alt="Wedge Club">
+      </div>
+    </div>
+
+    <!-- Section 4: Putters -->
+    <div class="equipment-section">
+      <div class="equipment-text">
+        <h2>Putters</h2>
+        <p>The putter is arguably the most important club in your bag because putting accounts for nearly half of your strokes during a round. A good putter should provide consistent feel and feedback, with a design that suits your putting stroke (e.g., mallet vs. blade). The right putter will help you make more putts inside 10 feet.</p>
+        <ul class="equipment-list">
+          <li>High-quality face insert for a soft yet responsive feel.</li>
+          <li>Alignment aids for accurate aiming.</li>
+          <li>Various head shapes (mallet, blade) for different putting strokes.</li>
+          <li>Counterbalancing options for stability in your stroke.</li>
+        </ul>
+      </div>
+      <div class="equipment-image">
+        <img src="your-putter-image.jpg" alt="Putter Club">
+      </div>
+    </div>
+
+    <!-- Section 5: Hybrids -->
+    <div class="equipment-section">
+      <div class="equipment-text">
+        <h2>Hybrids</h2>
+        <p>Hybrids combine the best features of both irons and woods, offering better forgiveness and versatility. They are particularly useful for long approach shots or when hitting from the rough. A good hybrid is designed to provide a higher launch, more forgiving strikes, and better playability from various lies.</p>
+        <ul class="equipment-list">
+          <li>Wide sole for better turf interaction.</li>
+          <li>Higher loft options for easier launch.</li>
+          <li>Hybrid shafts that provide a balance between irons and woods.</li>
+          <li>Forgiving design that minimizes mishits.</li>
+        </ul>
+      </div>
+      <div class="equipment-image">
+        <img src="your-hybrid-image.jpg" alt="Hybrid Club">
+      </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-to-home">
+      <a href="index.html" class="back-button">Back to Homepage</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
